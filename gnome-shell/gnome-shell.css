@@ -1,0 +1,101 @@
+* {
+  transition: 500ms;
+}
+
+#panel {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0 2px;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.5);
+}
+#panel .panel-button {
+  -natural-hpadding: 10px;
+  -minimum-hpadding: 5px;
+  padding: 2.5px 5px;
+  transition: 150ms;
+  border-radius: 5px;
+}
+#panel .panel-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#panel .panel-button .clock-display-box {
+  spacing: 2px;
+}
+#panel .panel-button .clock-display-box .clock {
+  padding: 0 15px;
+  border-radius: 5px;
+}
+#panel .panel-button .system-status-icon {
+  padding: 0 5px;
+}
+#panel .panel-button#panelActivities {
+  background-image: url("assets/activities.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: transparent;
+  -natural-hpadding: 0;
+  -minimum-hpadding: 0;
+}
+#panel .panel-corner {
+  -panel-corner-radius: 2.5px;
+  -panel-corner-background-color: #000;
+  -panel-corner-border-width: 0;
+  -panel-corner-border-color: transparent;
+  -panel-corner-opacity: 0.4;
+  opacity: 0.4;
+}
+#panel #panelLeft, #panel #panelCenter {
+  spacing: 2px;
+}
+
+#dash {
+  border-radius: 5px;
+}
+#dash .dash-background {
+  padding: 7.5px;
+  border-radius: 15px;
+  box-shadow: 0.5px 0.5px 1px 1px rgba(255, 255, 255, 0.025);
+}
+#dash .dash-separator {
+  width: 1px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+#dash .overview-icon {
+  padding: 7px 5px;
+  border-radius: 10px;
+}
+#dash .app-well-app:hover .overview-icon, #dash .show-apps:hover .overview-icon {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.dash-label {
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.workspace-animation {
+  background-color: #282A33;
+}
+
+.workspace-thumbnails .workspace-thumbnail {
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 1px;
+  border: none;
+}
+
+.workspace-thumbnails {
+  visible-width: 32px;
+  spacing: 7px;
+}
+
+.workspace-thumbnail-indicator {
+  border: 3px solid rgba(0, 110, 255, 0.58) solid 1.5px;
+  box-shadow: 0 0 1px rgba(0, 110, 255, 0.2);
+  border-radius: 3px;
+  padding: 0px;
+}
