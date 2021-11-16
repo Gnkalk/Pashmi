@@ -1,0 +1,21 @@
+{
+  "name": "pashmi",
+  "version": "1.0.0",
+  "description": "Pashmi, The Pashmaki Design Gnome Shell theme",
+  "scripts": {
+    "sass:export": "sass --watch --no-source-map ./gnome-shell/_sass/_index.sass:./gnome-shell/gnome-shell.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnkalk/pashmi.git"
+  },
+  "author": "Gnkalk",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/gnkalk/pashmi/issues"
+  },
+  "homepage": "https://github.com/gnkalk/pashmi#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}

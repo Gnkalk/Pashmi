@@ -1,0 +1,10 @@
+{
+    "configurations": [
+    {
+        "command": "npm run sass:export",
+        "name": "Run npm sass:export",
+        "request": "launch",
+        "type": "node-terminal"
+    }
+    ]
+}
