@@ -1,0 +1,40 @@
+#panel 
+    background-color: rgba(0, 0, 0, .8)
+    color: #ffffff
+    font-weight: bold
+    padding: 0 2px
+    box-shadow: 1px 0 2px rgba(0, 0, 0, .5)
+    .panel-button 
+        -natural-hpadding: 10px
+        -minimum-hpadding: 5px
+        padding: 2.5px 5px
+        transition: 150ms
+        border-radius: 5px
+        &:hover 
+            background-color: rgba(0, 0, 0, .2)
+        .clock-display-box 
+            spacing: 2px
+            .clock 
+                padding: 0 15px
+                border-radius: 5px
+        .system-status-icon
+            padding: 0 5px
+        &#panelActivities
+            background-image: url("assets/activities.svg")
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: auto
+            color: transparent
+            -natural-hpadding: 0
+            -minimum-hpadding: 0
+
+    .panel-corner 
+        -panel-corner-radius: 2.5px
+        -panel-corner-background-color: #000
+        -panel-corner-border-width: 0
+        -panel-corner-border-color: transparent
+        -panel-corner-opacity: .4
+        opacity: .4
+
+    #panelLeft, #panelCenter 
+        spacing: 2px
