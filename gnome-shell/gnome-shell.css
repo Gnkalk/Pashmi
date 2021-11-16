@@ -150,3 +150,38 @@
 .window-close StIcon {
   icon-size: 22px;
 }
+
+/* Search */
+#overview .search-entry {
+  width: 320px;
+  padding: 8px 10px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  caret-color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100px;
+  selection-background-color: #1A73E8;
+  selected-color: #FFFFFF !important;
+  margin: 25px 5px 5px 15px;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+#overview .search-entry:hover {
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+#overview .search-entry:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+#overview .search-entry .search-entry-icon {
+  icon-size: 16px;
+  padding: 0 4px;
+}
+#overview .search-entry:hover .search-entry-icon, #overview .search-entry:focus .search-entry-icon {
+  color: rgba(0, 0, 0, 0.75);
+}
+#overview .search-entry StLabel.hint-text {
+  margin-left: 2px;
+  color: rgba(0, 0, 0, 0.35);
+}
