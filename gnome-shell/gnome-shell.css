@@ -2,6 +2,7 @@
   transition: 500ms;
 }
 
+/* Top bar */
 #panel {
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
@@ -50,6 +51,7 @@
   spacing: 2px;
 }
 
+/* Dash */
 #dash {
   border-radius: 5px;
 }
@@ -77,6 +79,7 @@
   text-align: center;
 }
 
+/* Workspace */
 .workspace-animation {
   background-color: #282A33;
 }
@@ -98,4 +101,20 @@
   box-shadow: 0 0 1px rgba(0, 110, 255, 0.2);
   border-radius: 3px;
   padding: 0px;
+}
+
+/* OVERVIEW */
+.controls-manager, .secondary-monitor-workspaces {
+  spacing: 12px;
+}
+
+#overviewGroup {
+  background-color: #1f1f1f;
+}
+
+.overview-controls {
+  background-color: #1f1f1f;
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
