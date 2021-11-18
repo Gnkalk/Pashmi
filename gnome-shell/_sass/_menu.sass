@@ -1,0 +1,47 @@
+.app-well-app .overview-icon,
+.grid-search-result .overview-icon,
+    +icon
+    color: rgba(255, 255, 255, 0.85)
+    padding: 5px 10px
+    transition: 150ms
+
+.app-well-app:hover .overview-icon,
+.app-well-app:focus .overview-icon,
+.app-well-app:selected .overview-icon,
+.grid-search-result:hover .overview-icon,
+.grid-search-result:focus .overview-icon,
+.grid-search-result:selected .overview-icon
+    +icon-hover
+
+.app-well-app.app-folder .overview-icon 
+    +icon
+    +icon-hover
+
+.app-folder-dialog 
+    +icon
+    border: .5 solid rgba(255, 255, 255, .15)
+    background-color: rgba(34, 34, 34, .9)
+    .folder-name-container 
+        padding: 10px 30px 0
+        .folder-name-label, .folder-name-entry
+            font-size: 16pt
+            font-weight: 400
+        .edit-folder-button
+            +btn
+            background-color: rgba(255, 255, 255, 0.1)
+    .icon-grid
+        row-spacing: 10px
+        column-spacing: 25px
+
+.app-folder-dialog-container 
+    padding: 24px
+    width: 500px
+    height: 500px
+
+.app-well-app-running-dot
+    width: 9px
+    height: 2.5px
+    border-radius: 1px
+    background-color: rgba(255, 255, 255, .5)
+    box-shadow: 0 -1px 2.5px rgba(255, 255, 255, .5)
+    margin-bottom: 0

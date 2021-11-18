@@ -135,11 +135,11 @@
   background-color: rgba(0, 0, 0, 0.75);
   color: #FFFFFF;
   border-radius: 5px;
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  transition-duration: 300ms;
   padding: 3px;
   height: 22.5px;
   width: 22.5px;
-  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-  transition-duration: 300ms;
 }
 .window-close:hover, .window-close:active {
   background-color: #313131;
@@ -184,4 +184,75 @@
 #overview .search-entry StLabel.hint-text {
   margin-left: 2px;
   color: rgba(0, 0, 0, 0.35);
+}
+
+/* App menu */
+.app-well-app .overview-icon,
+.grid-search-result .overview-icon,
++ icon {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 5px 10px;
+  transition: 150ms;
+}
+
+.app-well-app:hover .overview-icon,
+.app-well-app:focus .overview-icon,
+.app-well-app:selected .overview-icon,
+.grid-search-result:hover .overview-icon,
+.grid-search-result:focus .overview-icon,
+.grid-search-result:selected .overview-icon {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.app-well-app.app-folder .overview-icon {
+  padding: 7px 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.app-folder-dialog {
+  padding: 7px 5px;
+  border-radius: 10px;
+  border: 0.5 solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(34, 34, 34, 0.9);
+}
+.app-folder-dialog .folder-name-container {
+  padding: 10px 30px 0;
+}
+.app-folder-dialog .folder-name-container .folder-name-label, .app-folder-dialog .folder-name-container .folder-name-entry {
+  font-size: 16pt;
+  font-weight: 400;
+}
+.app-folder-dialog .folder-name-container .edit-folder-button {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  transition-duration: 300ms;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.app-folder-dialog .folder-name-container .edit-folder-button:hover, .app-folder-dialog .folder-name-container .edit-folder-button:active {
+  background-color: #313131;
+}
+.app-folder-dialog .folder-name-container .edit-folder-button:active {
+  color: rgba(255, 255, 255, 0.8);
+}
+.app-folder-dialog .icon-grid {
+  row-spacing: 10px;
+  column-spacing: 25px;
+}
+
+.app-folder-dialog-container {
+  padding: 24px;
+  width: 500px;
+  height: 500px;
+}
+
+.app-well-app-running-dot {
+  width: 9px;
+  height: 2.5px;
+  border-radius: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 -1px 2.5px rgba(255, 255, 255, 0.5);
+  margin-bottom: 0;
 }
